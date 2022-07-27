@@ -1,0 +1,14 @@
+.App {
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	justify-content: center;
+	align-items: left;
+	padding: 1.4375rem 4.875rem; 
+	width: fit-content;
+    margin: 0 auto;
+
+	@media screen and (max-width: 890px) {
+		padding: 1.4375rem 1.875rem; 
+	}
+}

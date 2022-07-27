@@ -1,0 +1,76 @@
+@import '../../styles/index.scss';
+
+.table {
+	width: 67.3125rem;
+	@media screen and (max-width: 1240px) {
+		width: 45.3125rem;
+	}
+	@media screen and (max-width: 890px) {
+		width: 30.3125rem;
+	}
+}
+
+.tableBody {
+	tr {
+		td, th {
+			&:nth-child(1) {
+				width: 10.27%;
+				p {
+					text-align: center;
+				}
+			}
+			&:nth-child(2) {
+				width: 49.40%
+			}
+			&:nth-child(3) {
+				width: 40.34%
+			}
+		}
+	}
+}
+
+.tableHeaderCell {
+	color: $white;
+	background-color: $dark-gray;
+	border: 1px solid $dark-gray;
+  border-collapse: collapse;
+	height: 3.375rem;
+	cursor: pointer;
+	p {
+		display: inline-block;
+	}
+	img {
+		transition: 0.3s ease;
+	}
+}
+
+.tableHeaderCellTitle {
+	margin-right: 2rem;
+
+	@media screen and (max-width: 890px) {
+		margin-right: 1rem;
+	}
+
+	@media screen and (max-width:375px) {
+		margin-right: 0.5rem;
+	}
+}
+
+.table, .tableCell {
+	border: 1px solid $border-gray;
+  border-collapse: collapse;
+}
+
+.tableCell {
+	height: 3.5rem;
+}
+
+.tableCellContent {
+	font-size: 0.8125rem;
+	font-weight: 600;
+	line-height: 1.125rem;
+	letter-spacing: 0em;
+	text-align: left;
+	margin: 0.75rem;
+	color: $dark-gray;
+}

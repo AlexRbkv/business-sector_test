@@ -1,0 +1,96 @@
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: normal;
+	src:	local('Roboto-Regular'),
+				url("../assets/fonts/Roboto/Roboto-Regular.ttf") format('ttf'),
+				url("../assets/fonts/Roboto/Roboto-Regular.otf") format('otf'),
+				url("../assets/fonts/Roboto/Roboto-Regular.woff") format('woff'),
+				url("../assets/fonts/Roboto/Roboto-Regular.svg") format('svg'),
+}
+
+@font-face {
+	font-family: 'Roboto-Medium';
+	font-style: normal;
+	font-weight: normal;
+	src:	local('Roboto-Medium'),
+				url("../assets/fonts/Roboto/Roboto-Medium.ttf") format('ttf'),
+				url("../assets/fonts/Roboto/Roboto-Medium.otf") format('otf'),
+				url("../assets/fonts/Roboto/Roboto-Medium.woff") format('woff'),
+				url("../assets/fonts/Roboto/Roboto-Medium.svg") format('svg'),
+}
+
+@font-face {
+	font-family: 'Roboto-Italic';
+	font-style: normal;
+	font-weight: normal;
+	src:	local('Roboto-Italic'),
+				url("../assets/fonts/Roboto/Roboto-Italic.ttf") format('ttf'),
+				url("../assets/fonts/Roboto/Roboto-Italic.otf") format('otf'),
+				url("../assets/fonts/Roboto/Roboto-Italic.woff") format('woff'),
+				url("../assets/fonts/Roboto/Roboto-Italic.svg") format('svg'),
+}
+
+$gray: #5A5C66;
+$dark-gray: #474955;
+$light-gray: #B2B7BF;
+$border-gray: #E3E6EC;
+$green: #7EBC3C;
+$white: white;
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', 'Arial', sans-serif;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	font-size: 16px;
+	@media screen and (max-width:540px) {
+		font-size: 12px;
+	}
+	@media screen and (max-width:375px) {
+		font-size: 10px;
+	}
+	overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+* {
+	-webkit-transition: 0.4s ease;
+	-o-transition: 0.4s ease;
+	transition: 0.4s ease;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+img.active {
+	transition: 0.3s ease;
+	transform: rotate(180deg);
+}
+
+.previous.disabled, .next.disabled {
+	color: $border-gray;
+	pointer-events: auto;
+}

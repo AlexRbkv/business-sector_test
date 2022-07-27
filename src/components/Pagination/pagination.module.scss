@@ -1,0 +1,63 @@
+@import '../../styles/index.scss';
+
+.root {
+	display: flex;
+	flex-direction: row;
+	column-gap: 1rem;
+	align-items: center;
+	list-style: none;
+	// max-width: 67.3125rem;
+	width: 100%;
+	justify-content: center;
+	margin-top: 1.5rem;
+	padding: 0;
+
+	li {
+		cursor: pointer;
+		color: $dark-gray;
+	}
+
+	li:not(:first-child):not(:last-child) {
+		font-size: 1.125rem;
+		font-style: italic;
+		font-weight: 700;
+		line-height: 1.5rem;
+		letter-spacing: 0em;
+		text-align: left;
+	}
+
+	li:first-child, li:last-child {
+		font-size: 1.5rem;
+		font-weight: 600;
+		line-height: 2rem;
+		letter-spacing: 0em;
+		text-align: left;
+		font-style: normal;
+
+		@media screen and (max-width:460px) {
+			font-size: 1.2rem;
+		}
+	}
+
+	li:first-child {
+		margin-right: 10%;
+		@media screen and (max-width:460px) {
+			margin-right: 5%;
+		}
+	}
+	li:last-child {
+		margin-left: 10%;
+		@media screen and (max-width:460px) {
+			margin-left: 5%;
+		}
+	}
+}
+
+:global{
+	.selected {
+		a {
+			color: $green;
+		}
+	}
+}
+
